@@ -34,26 +34,26 @@
                     <input type="radio" name="speed" id="" value="50">
                     50 мбіт/с
                     <input type="radio" name="speed" id="" value="100">100 мбіт/с
-                
                 </label>
                 <br>
                 <label>
-                    Коментар:
-                    <textarea name="comments"></textarea>
+                    Оберіть:
+                    <select name="options" required>
+                        <option value="none">Варіанти</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
                 </label>
+                <br>
+                <p>
+                    <label>
+                        Коментар:
+                    <textarea name="comments"></textarea>
+                    </label>
+                </p>
             </form>
-            <br>
-            <label for="">
-                Оберіть:
-        
-                <select>
-                    <option value="none">Варіанти</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                </select>
-            </label>
-            <p><input type="submit" value="Надіслати"></p>
+            <input type="submit" value="Надіслати">
         </main>
         <br>
         <a href="index.html">Назад</a>
