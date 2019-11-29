@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Опитування</title>
-</head>
-
-<body>
-	<header>
-		<h1>Опитування</h1>
-	</header>
-	<main>
-		<form action="https://formspree.io/xrgbevze" method="POST">
-			<label>Ім'я: 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Опитування</title>
+    </head>
+    <body>
+        <header>
+            <h1>Опитування</h1>
+        </header>
+        <main>
+            <form action="https://formspree.io/xrgbevze" method="POST">
+                <label>
+                    Ім'я: 
                 <input type="text" name="name" required>
-            </label>
-			<br>
-			<label>Прізвище:
-                <input type="text" name="last name" required>
-            </label>
-			<br>
-			<label>Email:
-                <input type="text" name="email" required>
-            </label>
-			<br>
-			<label>Speed:</label>
-			<label>
-                    <input type="radio" name="speed" id="" value="10">10 мбіт/с
-                    <input type="radio" name="speed" id="" value="50">50 мбіт/с
-                    <input type="radio" name="speed" id="" value="100">100 мбіт/с
                 </label>
-			<br>
-			<label>Коментар:
+                <br>
+                <label>
+                    Прізвище:
+                <input type="text" name="last name" required>
+                </label>
+                <br>
+                <label>
+                    Email:
+                <input type="text" name="email" required>
+                </label>
+                <br>
+                <label>Speed:</label>
+                <label>
+                    <input type="radio" name="speed" id="" value="10">
+                    10 мбіт/с
+                    <input type="radio" name="speed" id="" value="50">
+                    50 мбіт/с
+                    <input type="radio" name="speed" id="" value="100">100 мбіт/с
+                
+                </label>
+                <br>
+                <label>
+                    Коментар:
                     <textarea name="comments"></textarea>
                 </label>
-			<br>
-			  <input type="submit" value="Надіслати"> 
-        </form>
-	</main>
-</body>
-
+            </form>
+            <br>
+            <label for="">
+                Оберіть:
+        
+                <select>
+                    <option value="none">Варіанти</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </label>
+            <p><input type="submit" value="Надіслати"></p>
+        </main>
+        <br>
+        <a href="index.html">Назад</a>
+    </body>
 </html>
